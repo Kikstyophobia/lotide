@@ -1,24 +1,6 @@
-const eqArrays = function(arrOne, arrTwo) {
-  if (arrOne.length !== arrTwo.length) {
-    return false;
-  } else {
-  for (let i = 0; i < arrOne.length; i++) {
-      if (arrOne[i] !== arrTwo[i]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
+const eqArrays = require('./eqArrays');
 
-const assertArraysEqual = function(firstArray, secondArray) {
-  let isEqual = eqArrays(firstArray, secondArray) 
-  if (isEqual) {
-    console.log("✅ Assertion Passed!");
-  } else {
-    console.log("❌ Assertion Failed!");
-  }
-};
+const assertArraysEqual = require('./assertArraysEqual');
 
 const middle = function(array) {
   let newArray = [];
