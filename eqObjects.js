@@ -39,13 +39,4 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-
-const ab = { a: "1", b: "2", c:[1,2,3]};
-const ba = { b: "2", a: "1", c:[1,2,3]};
-assertEqual(eqObjects(ab, ba), true); // => true
-
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc), false); // => false
-
-const abc1 = { e: "1", b: "2", d: "3" };
-assertEqual(eqObjects(abc, abc1), false); // => false
+module.exports = eqObjects;

@@ -12,3 +12,5 @@ const reverse = function(words) {
 for (let j = 2; j < args.length; j++) {
   console.log(reverse(args[j]));
 }
+
+module.exports = reverse;
